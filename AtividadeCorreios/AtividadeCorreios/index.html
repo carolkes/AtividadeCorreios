@@ -17,20 +17,20 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6 mt-2 mb-2"><input type="text" id="cepOrigem" placeholder="CEP origem" class="w-100 form-control" /></div>
+                    <div class="col-md-6 mt-2 mb-2"><input type="text" id="cepOrigem" onkeypress=" (this, '#####-###')" maxlength="9" placeholder="CEP origem" class="w-100 form-control" /></div>
                     <div class="col-md-6 mt-2 mb-2"><input type="text" id="cepDestino" placeholder="CEP destino" class="w-100 form-control" /></div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mt-2 mb-2">
                         <select id="codServico" class="w-100 form-control" placeholder="Código do serviço">
                             <option>---Selecione uma opção---</option>
-                            <option>04014 - SEDEX à vista</option>
-                            <option>04065 - SEDEX à vista pagamento na entrega</option>
-                            <option>04510 - PAC à vista</option>
-                            <option>04707 - PAC à vista pagamento na entrega</option>
-                            <option>40169 - SEDEX 12x (à vista na fatura)*</option>
-                            <option>40215 - SEDEX 10 (à vista e a faturar)*</option>
-                            <option>40290 - SEDEX Hoje Varejo</option>
+                            <option value="04014">SEDEX à vista</option>
+                            <option value="04065">SEDEX à vista pagamento na entrega</option>
+                            <option value="04510">PAC à vista</option>
+                            <option value="04707">PAC à vista pagamento na entrega</option>
+                            <option value="40169">SEDEX 12x(à vista na fatura)*</option>
+                            <option value="40215">SEDEX 10(à vista e a faturar)*</option>
+                            <option value="40290">SEDEX Hoje Varejo</option>
                         </select>
                     </div>
                    
@@ -49,7 +49,7 @@
         </div>
         <div class="card mt-5">
             <div class="card-header">
-                <h3 class="text-center">HISTORICO</h3>
+                <h3 class="text-center">HISTÓRICO</h3>
             </div>
             <div class="card-body">
                 <div id="div_content">
