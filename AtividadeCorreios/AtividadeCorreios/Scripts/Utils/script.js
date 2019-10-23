@@ -1,12 +1,18 @@
 ﻿var identificador = 0;
 
 $(document).ready(function () {
+
+    var $seuCampoCep = $("#cepOrigem");
+    $seuCampoCep.mask('00000-000', { reverse: true });
+
     $('#Calcular').click(function () {
 
         var cepOrigem = $('#cepOrigem').val();
         var cepDestino = $('#cepDestino').val();
         var codServico = $('#codServico').val();
-        
+
+
+
 
         var url = `http://usysweb.com.br/api/correiosambev.php?nCdEmpresa=08082650&sDsSenha=564321&sCepOrigem=${cepOrigem}&sCepDestino=${cepDestino}&nVlPeso=1&nCdFormato=1&nVlComprimento=20&nVlAltura=20&nVlLargura=20&sCdMaoPropria=n&nVlValorDeclarado=0&sCdAvisoRecebimento=n&nCdServico=${codServico}&nVlDiametro=0&StrRetorno=xml&nIndicaCalculo=3`;
         $.get(url, function (data) {
