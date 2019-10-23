@@ -1,2 +1,27 @@
-﻿body {
+﻿#Calcular 
+{
+    background-color: #0089c694;
+    border-radius: 10px;
+    font-size: x-large;
+    border: 0px;
+    color: white;
+    inline-size: -webkit-fill-available;
+}
+
+#titulo 
+{
+    background-color: #0089c645;
+    text-align-last: center;
+    color: white;
+    font-size: x-large;
+}
+
+#box {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #c0bdbd;
+    border-top-style: double;
+    border-left-style: double;
+    text-align: center;
+    font-size: x-large;
 }
