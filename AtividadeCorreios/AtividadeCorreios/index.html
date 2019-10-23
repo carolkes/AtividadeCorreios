@@ -2,9 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculo de frete</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    Oi Carol
+    <div class="container">
+        <input id="Calcular" type="button" value="Calcular o frete" style="background: #2a91281a;" />
+        <div class="card">
+            <div class="card-header">
+                a
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 mt-2 mb-2"><input type="text" placeholder="CEP origem" class="w-100" /></div>
+                    <div class="col-md-6 mt-2 mb-2"><input type="text" placeholder="CEP destino" class="w-100" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"><input type="text" placeholder="Código de serviço" class="w-100" /></div>
+                    <div class="col-md-6"><input type="text" class="w-100" /></div>
+                </div>
+            </div>
+        </div>
+        <div id="divContent">
+            <div></div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/inputmask/inputmask.js"></script>
+    <script src="Scripts/Utils/script.js"></script>
 </body>
 </html>
