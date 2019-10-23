@@ -25,3 +25,8 @@
     text-align: center;
     font-size: x-large;
 }
+
+body {
+    background-image: url('http://rdmonline.com.br/portal/wp-content/uploads/2019/09/servicos-de-entrega-de-encomendas.jpg');
+    background-size: cover;
+}
